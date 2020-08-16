@@ -18,6 +18,8 @@ The CSVs with this data should be stored under `Data/drop-off-locations` as csvs
 
 ## UI
 Shiny Dashboard to start with to show the the data and make a quick POC. I may have to rely on TFC to productionalize it.
+POC is up for Pennsylvania. The site has three dropdowns, state, zipcode or county. Only one state, **Pennsylvania**, but selecting a county or zip gets you to the address of an election office and a google maps link along with a telephone number.
+In addition, I have a fact table to let people know at the state level whether they can drop off someone else's ballot and requirements from the by the [NCSL website](https://www.ncsl.org/research/elections-and-campaigns/vopp-table-10-who-can-collect-and-return-an-absentee-ballot-other-than-the-voter.aspx#table).
 
 ## Things I will need help with
 1. Collecting the Data. It took me about two hours to scrap and clean PA election data, there are 49 other states plus DC that have this data. Based on discussions on Twitter and TFC Slack I've found other state sites with this info but will need help collecting and processing location information.
