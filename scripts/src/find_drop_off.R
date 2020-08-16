@@ -24,8 +24,8 @@ find_location <- function(state, zipcode = NULL, closest_city =  NULL, County = 
     if(length(address)){
       return(address)
     } else{
-      stop(sprintf("We don't have a record of an office for zipcode: %s in %s", 
-                   zipcode, state))
+      stop(sprintf("We don't have a record of an office for %s in %s", 
+                   closest_city, state))
     }
   }
   else if(!is.null(county)){
@@ -33,8 +33,8 @@ find_location <- function(state, zipcode = NULL, closest_city =  NULL, County = 
     if(length(address)){
       return(address)
     } else{
-      stop(sprintf("We don't have a record of an office for zipcode: %s in %s", 
-                   zipcode, state))
+      stop(sprintf("We don't have a record of an office for %s in %s", 
+                   county, state))
     }
   }
   else{
