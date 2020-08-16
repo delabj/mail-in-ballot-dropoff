@@ -10,13 +10,22 @@ This repo will serve as a collection point for data obtained on drop off locatio
 |:-----|:-----|:---------------------|:-----|:---------------------|:---------------------|
 
 
-I decided against email because phone numbers require urgency, emails can be ignored
+I decided against email because phone numbers require urgency, emails can be ignored.
+The CSVs with this data should be stored under `Data/drop-off-locations` as csvs named using the the abbreviation.
 
 2. Documented source of data
   The documentation is important because if there is an issue, the documentation should be used to justify the approach
 
 ## UI
 Shiny Dashboard to start with to show the the data and make a quick POC. I may have to rely on TFC to productionalize it.
+
+## Things I will need help with
+1. Collecting the Data. It took me about two hours to scrap and clean PA election data, there are 49 other states plus DC that have this data. Based on discussions on Twitter and TFC Slack I've found other state sites with this info but will need help collecting and processing location information.
+
+2. I love shiny and csvs (well maybe not csvs), but this needs to go into a Database. I'm a Data Scientist, so the best I can do is query data and maybe create snapshot files for an ETL process, but building a DB is beyond my skills. The webapp is cool, but shiny have limitations. 
+
+3. Spread the word. GOTV channels, send to campaigns, literally anything to tell people to go here if they need help.
+
 
 ## Usage by others
 The data I gathered is public, if you want to use it, I have no issues, but I will require that you site this Github repo in the name of reproduciblity
