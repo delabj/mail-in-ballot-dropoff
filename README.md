@@ -6,8 +6,11 @@ This repo will serve as a collection point for data obtained on drop off locatio
 ## Data requirements
 1. Each state should have a CSV with the following schema:
 
-|state |state abbreviation|locality              |locality type |address              |
-|:-----|:-----|:---------------------|:-----|:---------------------|
+|state |state abbreviation|locality              |locality type |address              | Phone
+|:-----|:-----|:---------------------|:-----|:---------------------|:---------------------|
+
+
+I decided against email because phone numbers require urgency, emails can be ignored
 
 2. Documented source of data
   The documentation is important because if there is an issue, the documentation should be used to justify the approach
